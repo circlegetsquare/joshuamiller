@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	color: #777777;
+	background-image: url("../images/seigaiha.png");
+}
+
+header {
+	background-color: #ffffff;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #dddddd;
+	height: 80px;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 78px;
+	background-color: #4aaaa5;
+	width:300px;
+	float: left;
+	height: 78px;
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: #4aaaa5;
+	padding-bottom: 30px;
+}
+
+h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #4aaaa5;
+	padding-bottom: 20px;
+}
+
+nav {
+	color: #dddddd;
+	float: right;
+	height: 78px;
+	line-height: 78px;
+	}
+
+p {
+	margin-bottom: 1em;
+}
+
+footer {
+ 	clear: both;
+	color: #cccccc;
+	font-size: 11px;
+ 	width: 100%;
+ 	height: 95px;
+ 	line-height: 95px;
+	/*position: absolute; 
+ 	left: 0;
+ 	bottom: 0; 
+ 	margin-top: -90px; */
+ 	border-top: 8px solid #4aaaa5;
+ 	background-color: #666666;
+ 	text-align: center;
+ 	clear: both;
+}
+
+a {
+
+}
+
+ul {
+	text-decoration: none;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+}
+
+.header-nav {
+	text-decoration: none;
+	color: #999999;
+ 	font-size: 17px;
+}
+
+.first {
+	padding: 0px 10px 0px 0px;
+}
+
+.middle {
+	padding: 0px 10px 0px 10px;
+}
+
+.last {
+	padding: 0px 0px 0px 10px;
+}
+
+.lead {
+	margin-top: -7px;
+}
+
+
+.break {
+	background-color: #dddddd;
+	width: 100%;
+	height: 3px;
+	margin-bottom: 30px;
+	}
+
+.break-side {
+	background-color: #dddddd;
+	width: 100%;
+	height: 2px;
+	margin-bottom: 20px;
+	}
+
+
+.container-main {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+ }
+
+ .container-header {
+	width: 960px;
+	height: 80px;
+	margin: 0 auto;
+ }
+
+.content {
+	border: 1px solid #dddddd;
+	min-height: 100%;
+
+}
+
+ .main {
+ 	width: 650px;
+ 	border: 1px solid #dddddd;
+ 	float: left;
+ 	padding: 43px 30px;
+ 	background-color: #ffffff;
+ 	margin-bottom: 37px;
+ 	/* margin-bottom: 90px; */
+ }
+
+ .sidebar {
+ 	width: 270px;
+ 	height: 200px;
+ 	float: right;
+ 	border: 1px solid #dddddd;
+ 	background-color: #ffffff;
+ 	padding-top: 30px;
+ }
+
+.sidebar-content {
+	width: 185px;
+	border: 1px solid #dddddd;
+	margin: 0 auto;
+}
+.photo {
+	margin: 0px 25px 0px 0px;
+	width: 200px;
+	height: 150px;
+	float: left;
+}
