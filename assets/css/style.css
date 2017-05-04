@@ -3,12 +3,19 @@
 	
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 28px;
 	color: #777777;
 	background-image: url("../images/seigaiha.png");
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -44,7 +51,7 @@ h2 {
 h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 21px;
 	color: #4aaaa5;
 	padding-bottom: 20px;
 }
@@ -61,7 +68,7 @@ p {
 }
 
 footer {
- 	clear: both;
+
 	color: #cccccc;
 	font-size: 11px;
  	width: 100%;
@@ -74,12 +81,23 @@ footer {
  	border-top: 8px solid #4aaaa5;
  	background-color: #666666;
  	text-align: center;
- 	clear: both;
+
+ 	margin-bottom: 0px;
 }
 
 a {
+	text-decoration: none;
 
 }
+
+a:active{
+	color: #5A00B2;
+}
+
+a:hover{
+	color: #FFD00D;
+}
+
 
 ul {
 	text-decoration: none;
@@ -91,21 +109,20 @@ li {
 }
 
 .header-nav {
-	text-decoration: none;
 	color: #999999;
  	font-size: 17px;
 }
 
 .first {
-	padding: 0px 10px 0px 0px;
+	padding: 0px 12px 0px 0px;
 }
 
 .middle {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 12px 0px 12px;
 }
 
 .last {
-	padding: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 12px;
 }
 
 .lead {
@@ -127,13 +144,17 @@ li {
 	margin-bottom: 20px;
 	}
 
+.wrapper-main {
+	min-height: 100%;
+	border: 5px blue solid;
+}
 
-.container-main {
+ .container-main {
 	width: 960px;
 	margin: 0 auto;
-	min-height: 100%;
-	position: relative;
- }
+	overflow: auto;
+
+}
 
  .container-header {
 	width: 960px;
@@ -142,33 +163,29 @@ li {
  }
 
 .content {
-	border: 1px solid #dddddd;
-	min-height: 100%;
-
+	
 }
 
  .main {
  	width: 650px;
  	border: 1px solid #dddddd;
- 	float: left;
  	padding: 43px 30px;
  	background-color: #ffffff;
  	margin-bottom: 37px;
- 	/* margin-bottom: 90px; */
+ 	float: left;
  }
 
  .sidebar {
  	width: 270px;
  	height: 200px;
- 	float: right;
  	border: 1px solid #dddddd;
  	background-color: #ffffff;
  	padding-top: 30px;
+ 	float: right;
  }
 
 .sidebar-content {
-	width: 185px;
-	border: 1px solid #dddddd;
+	width: 206px;
 	margin: 0 auto;
 }
 .photo {
@@ -176,4 +193,28 @@ li {
 	width: 200px;
 	height: 150px;
 	float: left;
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.logo-margin {
+	margin: 0px 10px 0px 10px;
+}
+
+.logo {
+	opacity: 1;
+}
+
+.logo:hover {
+	opacity: .6
+}
+
+.flex-main {
+	flex: 1;
 }
