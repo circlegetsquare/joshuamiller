@@ -1,3 +1,5 @@
+/* global styles */
+
 * {
 	box-sizing: border-box;
 	
@@ -16,14 +18,6 @@ body {
 	flex-direction: column;
 }
 
-header {
-	background-color: #ffffff;
-	border-bottom: 2px;
-	border-style: solid;
-	border-color: #cccccc;
-	height: 80px;
-	margin-bottom: 40px;
-}
 
 h1 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -54,12 +48,6 @@ h3 {
 	padding-bottom: 20px;
 }
 
-nav {
-	color: #dddddd;
-	float: right;
-	height: 78px;
-	line-height: 78px;
-	}
 
 p {
 	font-size: 16px;
@@ -67,22 +55,11 @@ p {
 	line-height: 28px;
 }
 
-footer {
-
-	color: #cccccc;
-	font-size: 11px;
- 	width: 100%;
- 	height: 95px;
- 	line-height: 95px;
- 	border-top: 8px solid #4aaaa5;
- 	background-color: #666666;
- 	text-align: center;
- 	margin-bottom: 0px;
-}
 
 a {
 	text-decoration: none;
-
+	color: #666666;
+	font-weight: bold;
 }
 
 a:active{
@@ -94,6 +71,14 @@ a:hover{
 }
 
 
+/* header and nav styles */
+nav {
+	color: #dddddd;
+	float: right;
+	height: 78px;
+	line-height: 78px;
+	}
+
 ul {
 	text-decoration: none;
 	text-align: center;
@@ -103,6 +88,39 @@ li {
 	display: inline-block;
 }
 
+header {
+	background-color: #ffffff;
+	border-bottom: 2px;
+	border-style: solid;
+	border-color: #cccccc;
+	height: 80px;
+	margin-bottom: 40px;
+}
+
+.header-nav {
+	color: #999999;
+ 	font-size: 17px;
+ 	font-weight: normal;
+}
+
+.first {
+	padding: 0px 12px 0px 0px;
+}
+
+.middle {
+	padding: 0px 12px 0px 12px;
+}
+
+.last {
+	padding: 0px 0px 0px 12px;
+}
+
+.lead {
+	margin-top: -7px;
+}
+
+
+/*Form Styles */
 label {
 	display: block;
 	padding-bottom: 10px;
@@ -130,27 +148,7 @@ textarea {
 }
 
 
-.header-nav {
-	color: #999999;
- 	font-size: 17px;
-}
-
-.first {
-	padding: 0px 12px 0px 0px;
-}
-
-.middle {
-	padding: 0px 12px 0px 12px;
-}
-
-.last {
-	padding: 0px 0px 0px 12px;
-}
-
-.lead {
-	margin-top: -7px;
-}
-
+/* using a div to make a horizonal rule */
 
 .break {
 	background-color: #dddddd;
@@ -165,6 +163,8 @@ textarea {
 	height: 2px;
 	margin-bottom: 20px;
 	}
+
+/* containers and divs and logo styles for content areas */
 
  .container-main {
 	width: 960px;
@@ -219,6 +219,7 @@ textarea {
 	float: right;
 }
 
+
 .logo-margin {
 	margin: 0px 10px 0px 10px;
 }
@@ -233,35 +234,29 @@ textarea {
 
 }
 
+
+/* footer styles */
+
+footer {
+
+	color: #cccccc;
+	font-size: 11px;
+ 	width: 100%;
+ 	height: 95px;
+ 	line-height: 95px;
+ 	border-top: 8px solid #4aaaa5;
+ 	background-color: #666666;
+ 	text-align: center;
+ 	margin-bottom: 0px;
+}
+
 .flex-main {
 	flex: 1;
 }
 
-.form-style {
-	padding-bottom: 20px;
-	width: 100%;
-	font-size: 18px;
-}
 
-button {
-	width: 117px;
-	height: 42px;
-	background-color: #4aaaa5;
-	border:none;
-	font: 16px;
-	color: #ffffff;
-	text-shadow:none;
-	transition-duration: 0.2s;
-	}
 
-button:hover {
-	background-color: #FFD00D;
-}
-
-button:active {
-	background-color: #4aaaa5;
-}
-
+/* portfolio styles */
 .portfolio {
 	width: 265px;
 	height: 200px;
