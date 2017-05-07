@@ -9,8 +9,6 @@ html {
 
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 28px;
 	color: #777777;
 	background-image: url("../images/seigaiha.png");
 	min-height: 100%;
@@ -22,7 +20,7 @@ header {
 	background-color: #ffffff;
 	border-bottom: 2px;
 	border-style: solid;
-	border-color: #dddddd;
+	border-color: #cccccc;
 	height: 80px;
 	margin-bottom: 40px;
 }
@@ -51,7 +49,7 @@ h2 {
 h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 700;
-	font-size: 21px;
+	font-size: 22px;
 	color: #4aaaa5;
 	padding-bottom: 20px;
 }
@@ -64,7 +62,9 @@ nav {
 	}
 
 p {
+	font-size: 16px;
 	margin-bottom: 1em;
+	line-height: 28px;
 }
 
 footer {
@@ -74,14 +74,9 @@ footer {
  	width: 100%;
  	height: 95px;
  	line-height: 95px;
-	/*position: absolute; 
- 	left: 0;
- 	bottom: 0; 
- 	margin-top: -90px; */
  	border-top: 8px solid #4aaaa5;
  	background-color: #666666;
  	text-align: center;
-
  	margin-bottom: 0px;
 }
 
@@ -107,6 +102,33 @@ ul {
 li {
 	display: inline-block;
 }
+
+label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+form {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+	font-size: 14px;
+	border: 1px solid #dddddd;
+	padding: 10px;
+	color: #777777;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #dddddd;
+	padding: 10px;
+	color: #777777;
+	font-size: 14px;
+}
+
 
 .header-nav {
 	color: #999999;
@@ -144,16 +166,10 @@ li {
 	margin-bottom: 20px;
 	}
 
-.wrapper-main {
-	min-height: 100%;
-	border: 5px blue solid;
-}
-
  .container-main {
 	width: 960px;
 	margin: 0 auto;
 	overflow: auto;
-
 }
 
  .container-header {
@@ -209,12 +225,80 @@ li {
 
 .logo {
 	opacity: 1;
+	transition-duration: 0.5s;
 }
 
 .logo:hover {
 	opacity: .6
+
 }
 
 .flex-main {
 	flex: 1;
 }
+
+.form-style {
+	padding-bottom: 20px;
+	width: 100%;
+	font-size: 18px;
+}
+
+button {
+	width: 117px;
+	height: 42px;
+	background-color: #4aaaa5;
+	border:none;
+	font: 16px;
+	color: #ffffff;
+	text-shadow:none;
+	transition-duration: 0.2s;
+	}
+
+button:hover {
+	background-color: #FFD00D;
+}
+
+button:active {
+	background-color: #4aaaa5;
+}
+
+.portfolio {
+	width: 265px;
+	height: 200px;
+	float:left;
+	position: relative;
+}
+
+.left-col {
+	float: left;
+}
+
+.right-col {
+	float: right;
+}
+
+.margin-top-55 {
+	margin-top:55px;
+}
+
+.port-image {
+	position: relative;
+}
+
+.port-overlay {
+	float: left;
+	width:100%;
+	height:60px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	margin-top: 130px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 22px;
+	line-height: 60px;
+}
+
+
